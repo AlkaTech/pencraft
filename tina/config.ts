@@ -2,13 +2,22 @@ import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
-  process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.NEXT_PUBLIC_TINA_BRANCH ||
+  process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
-  "main";
+  "master";
 
 export default defineConfig({
+//...
+  token:  process.env.TINA_TOKEN, // This should match the value in your .env file
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID // This should match the value in your .env file
   branch,
+  schema: {
+    collections: [
+    //...
+    // See https://tina.io/docs/schema/ for more info about "collections"
+  ]}
+})
 
   // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
