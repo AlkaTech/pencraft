@@ -8,8 +8,8 @@ const branch =
 
 export default defineConfig({
   branch,
-  clientId: '957e4c5e-d764-4eca-b57b-9a64601ec960', // From your .env
-  token: 'bfb300512176fecc53c894130ec99fae97ef100e', // From your .env
+  clientId: 'a3a89282-4d60-46bc-932e-1135d200c729', // From your .env
+  token: '4030372dddc594c6edfdec37e11d93969511d30c', // From your .env
   
   build: {
     outputFolder: "admin",
