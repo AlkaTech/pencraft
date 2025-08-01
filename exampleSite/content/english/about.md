@@ -1,6 +1,6 @@
 ---
 title: "About Our Company"
-description: "this is meta description"
+description: "Born in Nairobi’s dynamic tech scene, Compaincraft is a next-generation digital marketing agency that blends cutting-edge strategy with measurable results. Since our launch, we’ve specialized in turning brands into industry leaders through data-driven campaigns and relentless innovation."
 bg_image: "images/feature-bg.jpg"
 layout: "about"
 draft: false
